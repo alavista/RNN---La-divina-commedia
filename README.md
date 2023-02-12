@@ -1,16 +1,14 @@
-# RNN---La-divina-commedia
-A Recurrent Neural Network trained to generate text using Dante Alighieri's style.
+# Poetry generation (Deep Learning university project)
 
-The project has been evaluated according to the following metrics:
+# Dataset 
+- La divina commedia, Dante Alighieri
 
-Average Rhymeness
+# Relevant implemented stuff
+- Seq2Seq model with attention based on LSTM with input text tokenized at word level and char level (char level produce more rhyming verses)
+- Rhyme encoder: we trained a classifier to discriminates the rhyming area of a word (from the accented vowel to the end) in order to create an encoder that put rhyming words close in a multi-dimension space. Intrisic evaluation of this encoder showed that it worked well but including this encoder in the text generation model didn't help the model to generate more rhymes.
 
-Average Structuredness
-
-Average Hendecasyllables
-
-Plagiarism
-
-There are two networks: A double LSTM network and a Sequence2Sequence with attention.
-
-More informations are contained inside the report.
+# Evaluation
+- Average Rhymeness
+- Average Structuredness
+- Average Hendecasyllables
+- Plagiarism
